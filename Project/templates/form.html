@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link href=https://cdn.jsdelivr.net/nmp/bootstrap@5.1.0/dist/css/bootstrap.min.css rel="">
+        <title>Form</title>
+    </head>
+    <body>
+        <h1>Fill the form</h1>
+        <div class ="container">
+            <form method="post">
+                {{ form.as_p}}
+                {% csrf_token %}
+                <input type="submit" class="btn btn-primary btn-lg px-4 me-md-2" value="Submit">
+            </form>
+
+        </div>
+
+    </body>
+</html>
